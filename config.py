@@ -39,9 +39,9 @@ APP_ID = int(os.environ.get("APP_ID", "29414758"))
 #your api hash from https://my.telegram.org/apps
 API_HASH = os.environ.get("API_HASH", "8cd9e6113ed53dd8767cb760d4535bd1")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002008354608"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002488304483"))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
-OWNER_ID = int(os.environ.get("OWNER_ID", "7328629001"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6174868004"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "6666")
 #your database url mongodb only You can use mongo atlas free cloud database
@@ -54,7 +54,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 #your start default command message.
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link. ")
 #your telegram tag without @
-OWNER_TAG = os.environ.get("OWNER_TAG", "rohit_1888")
+OWNER_TAG = os.environ.get("OWNER_TAG", "CoderRzps")
 #Time in seconds for message delete, put 0 to never delete
 TIME = int(os.environ.get("TIME", "0"))
 
@@ -69,10 +69,10 @@ https://dashboard.shareus.io/
 # TRUE for yes FALSE if no 
 USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else False 
 # only shareus service known rightnow rest you can test on your own
-SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "Modijiurl.com")
+SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "shortxlinks.com")
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "beb3b795a226177f3af7c937a2f01d5d7d4f4cf0")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "beb3b795a226177f3af7c937a2f01d5d7d4f4cf0")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "fa2a0768fc8d2a51b22e46293634a52670a73c7a")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200
@@ -123,7 +123,7 @@ DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE"
 
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "7328629001 ").split()):
+    for x in (os.environ.get("ADMINS", "6508598835").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
