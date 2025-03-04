@@ -88,7 +88,7 @@ TUT_VID = os.environ.get("TUT_VID","https://t.me/APSmo/13")
 #put TRUE if you want this feature
 USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT", "TRUE") == "TRUE" else False) and (USE_SHORTLINK) else False
 #UPI ID
-UPI_ID = os.environ.get("UPI_ID", "singhayush88805@oksbi")
+UPI_ID = os.environ.get("UPI_ID", "9692293856@pthdfc")
 #UPI QR CODE IMAGE
 UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://i.postimg.cc/MHvVdcgP/Google-Pay-QR-1.png")
 #SCREENSHOT URL of ADMIN for verification of payments
@@ -121,7 +121,7 @@ DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE"
 
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6508598835 7328629001").split()):
+    for x in (os.environ.get("ADMINS", "6508598835, 7328629001").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
