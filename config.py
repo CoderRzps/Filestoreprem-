@@ -70,7 +70,7 @@ USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else F
 SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "shortxlinks.com")
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "beb3b795a226177f3af7c937a2f01d5d7d4f4cf0")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "8ab3c043d0a88d75669944bdff1e0e4c4ee365b5")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "3f8bfed2425ecf5f0b0f09d70acd18d8e2d99f18")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200
@@ -88,7 +88,7 @@ TUT_VID = os.environ.get("TUT_VID","https://t.me/APSmo/13")
 #put TRUE if you want this feature
 USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT", "TRUE") == "TRUE" else False) and (USE_SHORTLINK) else False
 #UPI ID
-UPI_ID = os.environ.get("UPI_ID", "9692293856@pthdfc")
+UPI_ID = os.environ.get("UPI_ID", "")
 #UPI QR CODE IMAGE
 UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://i.postimg.cc/MHvVdcgP/Google-Pay-QR-1.png")
 #SCREENSHOT URL of ADMIN for verification of payments
