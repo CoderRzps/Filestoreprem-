@@ -39,7 +39,7 @@ API_HASH = os.environ.get("API_HASH", "8cd9e6113ed53dd8767cb760d4535bd1")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002488304483"))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
-OWNER_ID = int(os.environ.get("OWNER_ID", "6581242129"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "8148618386"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "6666")
 #your database url mongodb only You can use mongo atlas free cloud database
@@ -121,7 +121,7 @@ DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE"
 
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6508598835").split()):
+    for x in (os.environ.get("ADMINS", "6508598835 8148618386").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
