@@ -1,5 +1,5 @@
 # --- For-Bot-Working --------- #
-
+python-3.10.13
 pyrofork==2.3.38
 TgCrypto
 pyromod==1.5
